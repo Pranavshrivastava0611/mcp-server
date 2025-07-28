@@ -1,0 +1,14 @@
+# global
+node_modules/
+.env
+.env.local
+
+# per-project
+frontend/.env
+backend/.env
+mcpserver/.env
+
+# others
+.DS_Store
+dist/
+.next/

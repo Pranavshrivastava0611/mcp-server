@@ -10,7 +10,7 @@ import {
 export const agents = pgTable('agents', {
 
    username: varchar('username', { length: 50 }).primaryKey(),
-  email: varchar('email', { length: 255 }).notNull().unique(),
+  email: varchar('email', { length: 255 }).notNull(),
   password: text('password').notNull(), // store bcrypt-hashed password
   phone: varchar('phone', { length: 20 }).notNull(),
 
